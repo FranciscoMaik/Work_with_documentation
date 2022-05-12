@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
-import { PrimaryButton, PrimaryButtonProps } from '.';
+import { PrimaryButton } from '.';
 
 export default {
   title: 'Primary Button',
@@ -12,8 +12,9 @@ const Template: ComponentStory<typeof PrimaryButton> = function (args) {
   return <PrimaryButton {...args} />;
 };
 
-export const Primary = Template.bind({});
+export const Default = Template.bind({});
 
-Primary.args = {
-  name: 'Teste',
+export const WithTitle = Template.bind({});
+WithTitle.args = {
+  name: 'Com titulo',
 };
